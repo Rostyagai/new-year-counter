@@ -1,0 +1,97 @@
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow: hidden;
+}
+body {
+  background-color: #fff5e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  padding: 3rem 1rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 15px 10px 55px -33px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 15px 10px 55px -33px rgba(0, 0, 0, 0.3);
+  box-shadow: 15px 10px 55px -33px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+
+h1 {
+  color: #141e46;
+  font-family: "Italianno", serif;
+  font-size: 2.4rem;
+}
+h1 .accent {
+  color: #bb2525;
+}
+p {
+  margin-bottom: 2rem;
+  color: #141e46ce;
+  font-family: "Italianno", serif;
+  font-size: 1.6rem;
+}
+span {
+  color: #141e46;
+}
+.days-count {
+  display: block;
+  color: #ff6969;
+  font-family: "Italianno", serif;
+  font-size: 2.2rem;
+}
+
+.bg-tree-right {
+  position: absolute;
+  right: -10rem;
+  bottom: 0;
+  z-index: -1;
+  rotate: -30deg;
+}
+.bg-tree-left {
+  position: absolute;
+  left: -10rem;
+  top: 0;
+  z-index: -1;
+  rotate: 30deg;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg-tree-left,
+  .bg-tree-right {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .bg-tree-left,
+  .bg-tree-right {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 425px) {
+  h1{
+    font-size: 1.8rem;
+  }
+  .bg-tree-left {
+    left: 0;
+    bottom: 0rem;
+    top: auto;
+    width: 110px;
+  }
+  .bg-tree-right {
+    position: fixed;
+    right: 0;
+    top: 0rem;
+    width: 200px;
+  }
+}
